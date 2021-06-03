@@ -1,11 +1,13 @@
+const attack = () => {
+    console.log(hero.name + " Fight...")
+}
+
 const hero = {
     name: "",
     hp: "100%",
     img: "",
     weapon: [],
-    attack: () => {
-        console.log(hero.name + " Fight...")
-    }
+    attack: {}
 }
 
 const scorpion = {
@@ -13,9 +15,7 @@ const scorpion = {
     hp: "100%",
     img: "http://reactmarathon-api.herokuapp.com/assets/scorpion.gif",
     weapon: [],
-    attack: () => {
-        console.log(scorpion.name + " Fight...")
-    }
+    attack: {}
 }
 
 const subZero = {
@@ -23,9 +23,7 @@ const subZero = {
     hp: "100%",
     img: "http://reactmarathon-api.herokuapp.com/assets/subzero.gif",
     weapon: [],
-    attack: () => {
-        console.log(subZero.name + " Fight...")
-    }
+    attack: {}
 }
 
 
@@ -60,5 +58,4 @@ function createPlayer(player, hero) {
 }
 
 createPlayer("player1", scorpion)
-
 createPlayer("player2", subZero)
